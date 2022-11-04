@@ -134,3 +134,44 @@ footer li {
 	list-style: none;
 	margin: 0 20px;
 }
+
+/* reto pug */
+.main {
+	display: flex;    display: grid;
+	grid-template-columns: 1fr 4fr;
+	align-items: center;
+	min-height: 80vh;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 20vw;
+	padding-left: 50px;
+	background-color: #EEF1F7;
+	height: 100%;
+	padding-bottom: 17vh;
+}
+
+.menu ul {
+	list-style: none;
+	padding: 0;
+	color: #012179;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.menu ul li {
+	margin-top: 10%;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.intro__reto {
+	padding: 0 150px;
+}
+
+.intro__reto p {
+	max-width: 100%;
+}

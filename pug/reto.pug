@@ -1,0 +1,13 @@
+extend ./componentes/plantilla.pug
+block contenidos
+  main.main
+    .menu
+      h1 Menu
+      ul 
+        each enlace in enlacesMenu
+          li #{enlace}
+    .intro__contenido.intro__reto 
+      h1 #{titulo}
+      p #{texto}
+      p #{texto}
+      a.boton Ver más
