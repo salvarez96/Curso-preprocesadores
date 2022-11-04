@@ -1,3 +1,6 @@
+-var titulo = "Titulo principal"
+-var titulos = ["Titulo principal", "subtitulo 1", "subtitulo 2", "subtitulo 3"]
+
 doctype html 
 html(lang="en")
   head
@@ -7,6 +10,11 @@ html(lang="en")
     title PlatziGames 
   body 
     header  
-      section 
-        h1.main__title.main__title--green#title PlatziGames
-        a.boton Registro
+      h1.main__title.main__title--green#title PlatziGames
+      a.boton Registro
+    section.intro
+      .intro__imagen: img(src="./images/imagen.png", alt="")
+      .intro__contenido 
+        h2 #{titulos[1]}
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusantium cupiditate nisi officiis cumque distinctio, ullam aperiam qui exercitationem dignissimos, modi iure maxime libero non voluptate ea, fuga optio voluptas? #[span Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure nam architecto voluptatum nemo voluptates iste.]
+        a.boton Leer más
