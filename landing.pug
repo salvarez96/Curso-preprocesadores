@@ -1,30 +1,25 @@
--var titulo = "Titulo principal"
--var titulos = ["Titulo principal", "subtitulo 1", "subtitulo 2", "subtitulo 3"]
--var usuario = "David"
--var enlaces = [{name: "About", link: "about.com"}, {name:"Contact us", link:"contact.com"}, {name:"Products", link:"products.com"}]
-
+include ./pug/variables.pug
 doctype html 
 html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel='stylesheet' href='./css/ejercicio-pug.css')
-    title PlatziGames 
+  include ./pug/head.pug
   body 
     header  
       h1.main__title.main__title--green#title PlatziGames
-      each link in enlaces
-        a(href=link.link) #{link.name}
+      //- each link in enlaces
+      //-   a(href=link.link) #{link.name}
       if usuario
         a Hola #{usuario}
       else
         a.boton Registro
     section.intro
-      .intro__imagen: img(src="./images/imagen.png", alt="")
+      .intro__imagen: img(src=imagen, alt="")
       .intro__contenido 
-        h2 #{titulos[1]}
+        h2 #{titulo}
         p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusantium cupiditate nisi officiis cumque distinctio, ullam aperiam qui exercitationem dignissimos, modi iure maxime libero non voluptate ea, fuga optio voluptas? #[span Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure nam architecto voluptatum nemo voluptates iste.]
         a.boton Leer más
-    ul
+    //- ul
+    //-   each titulo in titulos
+    //-     li #{titulo}
+    main.contenido
       each titulo in titulos
-        li #{titulo}
+       +caja(imagen, titulo, contenido)
