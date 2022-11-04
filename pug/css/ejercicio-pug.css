@@ -127,8 +127,6 @@ footer ul {
 	margin-left: auto;
 	display: flex;
 	align-content: flex-end;
-	position: relative;
-	top: -60px;
 }
 footer li {
 	list-style: none;
