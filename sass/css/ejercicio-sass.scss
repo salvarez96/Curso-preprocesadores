@@ -1,3 +1,10 @@
+$fuente1: Lato, sans-serif;
+$fuente2: Oswald, sans-serif;
+$color-primario: #333333;
+$color-claro: #ffffff;
+$color-secundario: #8841da;
+$color-variacion: #3f579a;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +12,7 @@
 }
 
 body {
-  font-family: Lato, sans-serif;
+  font-family: $fuente1;
 }
 
 main {
@@ -17,6 +24,8 @@ main {
 .perfil {
   width: 50%;
   padding-top: 50px;
+  color: $color-claro;
+  background-color: $color-secundario;
   &__avatar {
     display: block;
     margin: 0 auto;
@@ -26,6 +35,7 @@ main {
     text-transform: uppercase;
     text-align: center;
     font-size: 20px;
+    font-family: $fuente2;
   }
   &__titulo {
     display: block;
@@ -44,5 +54,31 @@ main {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+    font-family: $fuente2;
+    color: #ffffff;
+  }
+}
+
+.estadistica--perfil {
+  display: flex;
+  width: 50%;
+  height: 90px;
+  padding-top: 15px;
+  margin: 0 auto;
+  justify-content: space-around;
+  border-radius: 20px;
+  background-color: $color-claro;
+  h3 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $fuente2;
+  }
+  span {
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $fuente2;
   }
 }
