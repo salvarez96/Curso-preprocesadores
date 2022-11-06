@@ -14,7 +14,7 @@ $color-variacion: #3f579a;
 @function get-opacity($color, $opacidad) {
   @return rgba($color, $opacidad);
 }
-@each $header, $size in (h1: 30px, h2, 25px, h3: 20px){
+@each $header, $size in (h1: 30px, h2: 25px, h3: 20px){
   #{$header} {
     font-size: $size;
     margin: 0;
